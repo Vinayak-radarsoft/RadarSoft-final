@@ -77,7 +77,7 @@ export default function Home() {
       email, fullName, phoneNumber
     }
     try {
-      const response = await axios.post(`/api/hello`, form)
+      const response = await axios.post(`https://radar-soft-final.vercel.app/api/hello`, form)
       if (response.status === 200) {
         console.log("response here", response);
         setEmail("");
